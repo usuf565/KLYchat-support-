@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0912">
+<title>KLYchat Support</title>
+<style>
+:root{--accent:#8057f5;--bg:#0b0912;--panel:#171321;--panel2:#211b30;--text:#f7f4ff;--muted:#aaa1ba;--line:#332b43}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#8057f544,transparent 55%),var(--bg);color:var(--text);font:15px/1.5 system-ui,Segoe UI,sans-serif}
+.wrap{max-width:1050px;margin:auto;padding:22px}.top{display:flex;justify-content:space-between;align-items:center}.brand{display:flex;gap:11px;align-items:center;font-weight:850;font-size:22px}.logo{width:42px;height:42px;border-radius:15px;background:linear-gradient(135deg,var(--accent),#b29bff);display:grid;place-items:center;font-size:22px}.tag{color:#c9baff;border:1px solid #7053bc77;background:#8057f522;padding:7px 12px;border-radius:99px;font-size:12px}
+.hero{text-align:center;padding:65px 10px 42px}.hero h1{font-size:clamp(34px,7vw,58px);line-height:1.05;margin:12px 0}.hero p{color:var(--muted);max-width:580px;margin:0 auto 22px}.eyebrow{color:#bba7ff;text-transform:uppercase;letter-spacing:2px;font-weight:800;font-size:12px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{border:0;border-radius:14px;padding:13px 19px;font-weight:800;cursor:pointer;text-decoration:none;display:inline-block}.primary{background:linear-gradient(110deg,var(--accent),#a58aff);color:white}.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:linear-gradient(155deg,#1d1729,#14111d);border:1px solid var(--line);border-radius:20px;padding:20px}.ico{width:42px;height:42px;border-radius:14px;background:#8057f52c;display:grid;place-items:center;font-size:21px;margin-bottom:13px}.card h2{font-size:18px;margin:0 0 6px}.card p{color:var(--muted);font-size:13px;margin:0}.section{margin:36px 0}.sectionhead{margin-bottom:15px}.sectionhead h2{font-size:25px;margin:0 0 4px}.sectionhead p{margin:0;color:var(--muted)}
+.formcard{max-width:700px;margin:auto}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:13px;color:#d9d1e8}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:12px;background:#100d18;color:var(--text);padding:12px;outline:none;font:inherit}textarea{min-height:115px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--accent)}.hint{font-size:12px;color:var(--muted)}.status{display:none;margin-top:12px;padding:12px;border-radius:12px;background:#8057f522;color:#d9ceff;font-size:13px}.colors{display:flex;gap:9px;margin-top:14px}.swatch{border:2px solid #ffffff66;border-radius:50%;width:25px;height:25px;cursor:pointer}.footer{border-top:1px solid var(--line);margin-top:40px;padding:22px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero{padding-top:48px}.wrap{padding:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand"><div class="logo">K</div>KLYchat <span style="color:var(--muted);font-weight:500">Support</span></div><span class="tag">Центр помощи</span></header>
+<section class="hero"><div class="eyebrow">Официальный центр поддержки</div><h1>Чем можем помочь?</h1><p>Скачивай KLYchat, сообщай о проблемах и предлагай идеи. Поможем сделать мессенджер лучше вместе.</p><div class="actions"><a class="btn primary" href="#download">⬇ Скачать KLYchat</a><a class="btn secondary" href="#report">🐛 Сообщить о баге</a></div></section>
+<section class="grid">
+<div class="card"><div class="ico">📥</div><h2>Скачать приложение</h2><p>Здесь будет опубликована последняя версия KLYchat для Android.</p></div>
+<div class="card"><div class="ico">🐛</div><h2>Нашёл ошибку?</h2><p>Опиши, что произошло, на каком устройстве и как повторить проблему.</p></div>
+<div class="card"><div class="ico">💡</div><h2>Есть идея?</h2><p>Предложи функцию или улучшение — идеи пользователей важны.</p></div>
+</section>
+<section class="section" id="download"><div class="sectionhead"><h2>Скачать KLYchat</h2><p>Здесь появится кнопка загрузки APK, когда будет готов первый релиз.</p></div><div class="card"><h2>🚧 Приложение пока готовится</h2><p>Файл установки ещё не опубликован. Не скачивай APK из неизвестных источников. Когда появится официальная сборка, ссылка будет размещена здесь.</p></div></section>
+<section class="section" id="report"><div class="sectionhead"><h2>Сообщить о проблеме</h2><p>Заполни форму — подготовим сообщение для команды KLYchat.</p></div>
+<div class="card formcard"><form id="bugform"><div class="formgrid">
+<div class="field"><label for="type">Тип обращения</label><select id="type"><option>Ошибка / баг</option><option>Предложение идеи</option><option>Проблема со входом</option><option>Другое</option></select></div>
+<div class="field"><label for="device">Устройство</label><input id="device" placeholder="Например, Honor X7c"></div>
+<div class="field full"><label for="title">Кратко опиши проблему</label><input id="title" required placeholder="Например, приложение закрывается"></div>
+<div class="field full"><label for="details">Что произошло?</label><textarea id="details" required placeholder="Что ты нажимал? Что ожидал увидеть? Что произошло вместо этого?"></textarea></div>
+<div class="field full"><label for="contact">Контакт для ответа (необязательно)</label><input id="contact" placeholder="Ник или электронная почта"></div>
+</div><p class="hint">Пока это демонстрационная форма: она не отправляет данные на сервер.</p><button class="btn primary" type="submit">Подготовить сообщение</button><div class="status" id="status"></div></form></div></section>
+<section class="section"><div class="sectionhead"><h2>Цвет сайта</h2><p>Выбери оформление под себя.</p><div class="colors"><button class="swatch" style="background:#8057f5" data-c="#8057f5" aria-label="Фиолетовый"></button><button class="swatch" style="background:#20b879" data-c="#20b879" aria-label="Зелёный"></button><button class="swatch" style="background:#ef4444" data-c="#ef4444" aria-label="Красный"></button><button class="swatch" style="background:#eab308" data-c="#eab308" aria-label="Жёлтый"></button><button class="swatch" style="background:#3285f5" data-c="#3285f5" aria-label="Синий"></button><button class="swatch" style="background:#ec4899" data-c="#ec4899" aria-label="Розовый"></button></div></div></section>
+<footer class="footer"><span>© 2026 KLYchat Support</span><span>Сайт поддержки · Первый прототип</span></footer>
+</div>
+<script>
+document.querySelectorAll('.swatch').forEach(b=>b.onclick=()=>{document.documentElement.style.setProperty('--accent',b.dataset.c);try{localStorage.setItem('kly-support-color',b.dataset.c)}catch(e){}});
+try{let c=localStorage.getItem('kly-support-color');if(c)document.documentElement.style.setProperty('--accent',c)}catch(e){}
+document.getElementById('bugform').addEventListener('submit',e=>{e.preventDefault();let data={type:type.value,device:device.value,title:title.value,details:details.value,contact:contact.value};let body=`Тип: ${data.type}\nУстройство: ${data.device}\nПроблема: ${data.title}\nПодробности: ${data.details}\nКонтакт: ${data.contact}`;let s=document.getElementById('status');s.style.display='block';s.textContent='Сообщение подготовлено. Скопируй текст ниже и отправь разработчику:\n'+body; if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(body).catch(()=>{});});
+</script>
+</body></html>
